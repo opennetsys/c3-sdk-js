@@ -1,6 +1,6 @@
 # c3-sdk-js
 
-> The C3 SDK for NodeJS
+> The [C3](https://github.com/c3systems/c3-go) SDK for NodeJS
 
 [![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/c3systems/c3-sdk-js/master/LICENSE)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
@@ -55,6 +55,7 @@ make lint/fix
 
 ## TODO
 
+- Tests
 - Use TypeScript
 
 ## License

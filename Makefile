@@ -25,6 +25,10 @@ test/hexutil:
 test/hashlib:
 	@node util/hashlib_test.js
 
+.PHONY: test/txparamcoder
+test/txparamcoder:
+	@node util/txparamcoder_test.js
+
 .PHONY: lint
 lint:
 	@npm run lint

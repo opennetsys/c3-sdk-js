@@ -1,7 +1,7 @@
 const test = require('tape')
 const hashlib = require('./hashlib')
 
-test('sdk', t => {
+test('hashlib', t => {
   t.plan(5)
 
   t.equal(hashlib.generate().toString('hex').length, 66)

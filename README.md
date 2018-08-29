@@ -9,6 +9,8 @@
 
 ## Usage
 
+Here's a hello world example:
+
 ```js
 const c3 = require('c3-sdk-js')
 

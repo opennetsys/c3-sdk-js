@@ -1,8 +1,11 @@
 # c3-sdk-js
 
-> The C3 SDK for JavaScript and NodeJS
+> The C3 SDK for NodeJS
 
-[![License](http://img.shields.io/badge/license-MIT-blue.svg)] [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![Build Status](https://travis-ci.org/c3systems/c3-sdk-js.svg?branch=master)](https://travis-ci.org/c3systems/c3-sdk-js)
+[![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/c3systems/c3-sdk-js/master/LICENSE)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Build Status](https://travis-ci.org/c3systems/c3-sdk-js.svg?branch=master)](https://travis-ci.org/c3systems/c3-sdk-js)
+[![Coverage Status](https://coveralls.io/repos/github/c3systems/c3-sdk-js/badge.svg?branch=master)](https://coveralls.io/github/c3systems/c3-sdk-go?branch=master)
 
 ## Usage
 
@@ -27,8 +30,6 @@ class App {
 }
 
 function main () {
-  console.log('running')
-
   const app = new App()
   client.registerMethod('setItem', ['string', 'string'], app.setItem)
   client.registerMethod('getItem', ['string'], app.getItem)
@@ -45,6 +46,8 @@ make test
 ```
 
 ## Development
+
+Lint
 
 ```bash
 make lint/fix

@@ -55,7 +55,6 @@ make lint/fix
 
 ## TODO
 
-- Tests
 - Use TypeScript
 
 ## License

@@ -14,19 +14,25 @@ lint/fix/example:
 	@standard --fix example/*
 
 .PHONY: test
-test:
+test: test/lib test/util
+
+.PHONY: test/lib
+test: test/lib
 	@npm test
 
-.PHONY: test/hexutil
-test/hexutil:
+.PHONY: test/util
+test/util: test/util/hexutil test/util/hashlib test/util/txparamcoder
+
+.PHONY: test/util/hexutil
+test/util/hexutil:
 	@node util/hexutil_test.js
 
-.PHONY: test/hashlib
-test/hashlib:
+.PHONY: test/util/hashlib
+test/util/hashlib:
 	@node util/hashlib_test.js
 
-.PHONY: test/txparamcoder
-test/txparamcoder:
+.PHONY: test/util/txparamcoder
+test/util/txparamcoder:
 	@node util/txparamcoder_test.js
 
 .PHONY: lint

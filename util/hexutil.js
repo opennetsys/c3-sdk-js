@@ -10,7 +10,7 @@ function decodeString (hexStr) {
 }
 
 function encodeToString (buf) {
-  return addLeader(buf.toString('hex'))
+  return addLeader(buf.toString('hex')).toLowerCase()
 }
 
 function encodeBytes (src) {
@@ -22,7 +22,7 @@ function decodeBytes (src) {
 }
 
 function encodeInt64 (i) {
-  return addLeader(i.toString(16))
+  return addLeader(i.toString(16)).toLowerCase()
 }
 
 function decodeInt64 (hexStr) {
@@ -31,7 +31,7 @@ function decodeInt64 (hexStr) {
 
 // https://www.h-schmidt.net/FloatConverter/IEEE754.html
 function encodeFloat64 (f) {
-  return addLeader(encodeFloat(f).toString('16'))
+  return addLeader(encodeFloat(f).toString('16')).toLowerCase()
 }
 
 function decodeFloat64 (hexStr) {
@@ -39,7 +39,7 @@ function decodeFloat64 (hexStr) {
 }
 
 function encodeBigInt (i) {
-  return addLeader(i.toString('hex'))
+  return addLeader(i.toString('hex')).toLowerCase()
 }
 
 function decodeBigInt (hexStr) {

@@ -5,7 +5,7 @@ const hexutil = require('./hexutil')
 const bn = (i) => new BN(i)
 
 test('hexutil', t => {
-  t.plan(18)
+  t.plan(19)
 
   t.equal(hexutil.encodeString('hello'), '0x68656c6c6f')
   t.equal(hexutil.encodeString('123'), '0x313233')
@@ -24,6 +24,7 @@ test('hexutil', t => {
   // t.deepEqual(hexutil.decodeFloat64('0xC0818A4A57A786C2'), -561.2863)
   t.equal(hexutil.encodeBigInt(bn(123)), '0x7b')
   t.equal(hexutil.encodeBigInt(bn(53452345)), '0x32f9e39')
+  t.equal(hexutil.encodeBigInt(bn('7237005577332262213973186563042994240829374041602535253248099000494570602496')), '0x10000000000000000000000000000000000000000000002a646e18c953780000')
   t.equal(hexutil.decodeBigInt('0x7B').toString('hex'), bn(123).toString('hex'))
   t.equal(hexutil.stripLeader('0x123'), '123')
   t.equal(hexutil.stripLeader('123'), '123')

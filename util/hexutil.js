@@ -1,7 +1,7 @@
 const BN = require('bn.js')
 
 function encodeString (str) {
-  return addLeader(Buffer.from(str, 'utf8').toString('hex'))
+  return addLeader(Buffer.from(str, 'utf8').toString('hex')).toLowerCase()
 }
 
 function decodeString (hexStr) {

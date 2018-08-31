@@ -1,5 +1,5 @@
 const test = require('tape')
-const hashlib = require('./hashlib')
+const hashlib = require('./hashutil')
 
 test('hashlib', t => {
   t.plan(5)

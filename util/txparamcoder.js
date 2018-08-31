@@ -1,5 +1,5 @@
 const hexutil = require('./hexutil')
-const hashlib = require('./hashlib')
+const hashlib = require('./hashutil')
 
 function encodeMethodName (name) {
   return hashlib.hashToHexString(Buffer.from(name))

@@ -21,15 +21,15 @@ test: test/lib
 	@npm test
 
 .PHONY: test/util
-test/util: test/util/hexutil test/util/hashlib test/util/txparamcoder
+test/util: test/util/hexutil test/util/hashutil test/util/txparamcoder
 
 .PHONY: test/util/hexutil
 test/util/hexutil:
 	@node util/hexutil_test.js
 
-.PHONY: test/util/hashlib
-test/util/hashlib:
-	@node util/hashlib_test.js
+.PHONY: test/util/hashutil
+test/util/hashutil:
+	@node util/hashutil_test.js
 
 .PHONY: test/util/txparamcoder
 test/util/txparamcoder:

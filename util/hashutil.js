@@ -16,7 +16,7 @@ function hashToHexString (data) {
 }
 
 function isEqual (hexHash, data) {
-  return hexHash === hashToHexString(data)
+  return hexHash.toLowerCase() === hashToHexString(data)
 }
 
 module.exports = {

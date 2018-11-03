@@ -1,8 +1,13 @@
 {
   "name": "@c3-labs/c3-sdk-js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
+  "homepage": "https://github.com/c3systems/c3-sdk-js#readme",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/c3systems/c3-sdk-js.git"
+  },
   "scripts": {
     "start": "node .",
     "test": "./node_modules/nyc/bin/nyc.js --reporter=html --reporter=text tape ./test/index.js",
@@ -10,7 +15,7 @@
     "lint": "standard index.js",
     "lint:fix": "standard --fix index.js"
   },
-  "author": "",
+  "author": "C3 Labs",
   "license": "MIT",
   "devDependencies": {
     "tape": "^4.9.1",
